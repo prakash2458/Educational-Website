@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header nav{
+    display: flex;
+    padding: 1.25rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav li{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 10px;
+    padding-top: 0;
+}
+.header nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+    transition: .1s ease;
+}
+.header nav li a:hover{
+    background: rgb(194, 17, 17);
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.text-box p{
+    font-size: 17px;
+    margin-bottom: 20px;line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+.hero-btn{
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 34px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    transition: .1s ease;
+}
+.hero-btn:hover{
+    /* transform: translateY(5px); */
+    letter-spacing: 1.5px;
+    background: rgb(194, 17, 17);
+}
+nav .fa{
+    display: none;
+}
+
+/* Course */
+.similar{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.similar h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.similar p{
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    padding: 20px 12px;
+    border-radius: 10px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.course-col h3{
+    font-weight: 700;
+    margin: 10px 0;
+}
+/* .campus{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+} */
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s ease;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    opacity: 0;
+    transition: .5s ease;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col h3{
+    margin: 16px 0 15px 0;
+    text-align: left;
+}
+.facilities-col p{
+    padding: 0;
+}
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin: 0 30px 0 5px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col > div > h3{
+    margin-top: 15px;
+}
+.testimonial-col .fa{
+    color: rgb(194, 17, 17);
+    margin-top: 10px;
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin: 20px 0 25px 0;
+    font-weight: 600;
+}
+.footer p{
+    color: #777;
+}
+@media (max-width: 700px){
+    .header nav{
+        padding: 0 4rem;
+    }
+    .header nav a img{
+        width: 170px;
+        margin-top: 18px;
+    }
+    .text-box h1{
+        font-size: 25px;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(194, 17, 17);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        display: none;
+        transition: 1s ease;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-bottom: 30px;
+    }
+    nav .fa{
+        display: inline-block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .course{
+        padding-top: 60px;
+    }
+    .row{
+        display: block;
+        margin-top: 50px;
+    }
+    .course-col{
+        margin-bottom: 40px;
+    }
+    .course-col:last-child, .campus-col:last-child, .facilities-col:last-child{
+        margin-bottom: 0;
+    }
+    .similar{
+        padding-top: 60px;
+    }
+    .testimonial-col img{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .cta h1{
+        font-size: 20px;
+    }
+}
